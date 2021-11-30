@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Driver Details</title>
+    <link href="asserts/css/bootstrap.min.css" rel="stylesheet">
+    <link href="asserts/css/DriverForm.css" rel="stylesheet">
+
+</head>
+<body style="background-color: #636e72">
+
+<section class="container-fluid p-3" style="background-color: black">
+    <h1 class="text-white">Driver Details</h1>
+</section>
+
+<div class="container-fluid mt-3" id="driverform">
+    <div class="col-xl-12">
+        <div class="bg-white card">
+            <div class="card-header text-white" style="font-size: 20px; background: #2d3436">
+                Driver Form
+            </div>
+            <div class="card-body bg-white" style="color: black">
+                <div class="row p-2">
+                    <div class="form-group col-6">
+                        <lable>Driver ID :</lable>
+                        <input type="text" id="txtDriverId" class="form-control">
+                        <span class="control-error" id="lbldriverid"></span>
+                    </div>
+                    <div class="form-group col-6">
+                        <lable>Name :</lable>
+                        <input type="text" id="txtName" class="form-control" >
+                        <span class="control-error" id="lblname"></span>
+                    </div>
+                    <div class="form-group col-6">
+                        <lable>Email :</lable>
+                        <input type="text" id="txtEmail" class="form-control" >
+                        <span class="control-error" id="lblEmail"></span>
+                    </div>
+                    <div class="form-group col-6">
+                        <lable>Contact :</lable>
+                        <input type="text" id="txtContact" class="form-control" >
+                        <span class="control-error" id="lblcontact"></span>
+                    </div>
+                </div>
+                <div class="row p-2">
+                    <div class="form-group col-12">
+                        <lable>Address :</lable>
+                        <input type="text" id="txtAddress" class="form-control">
+                        <span class="control-error" id="lbladdress"></span>
+                    </div>
+                </div>
+
+                <div class="row p-1 mt-lg-4 " align="left">
+                    <div class="form-group col-12">
+                        <button type="button" class="btn text-white fw-bold" style="background-color: #0652DD" id="btnDriverAdd">Save</button>
+                        <button type="button" class="btn text-white fw-bold" style="background-color: #009432" id="btnDriverUpdate">Update</button>
+                        <button type="button" class="btn text-white fw-bold" style="background-color: #eb2f06" id="btnDriverDelete">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-xl-7 mt-5" >
+    <table class="table table-hover border mt-1" >
+        <thead class="text-white" style="background: #1e272e">
+
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Contact</th>
+            <th scope="col">Address</th>
+        </tr>
+        </thead>
+        <tbody id="tBody" style="background: white" id="tblDriver">
+
+        </tbody>
+    </table>
+</div>
+
+<script src="../src/asserts/js/jquery-3.5.1.min.js"></script>
+<script src="../src/asserts/js/bootstrap.min.js"></script>
+<script src="../src/controller/DriverController.js"></script>
+
+</body>
+</html>

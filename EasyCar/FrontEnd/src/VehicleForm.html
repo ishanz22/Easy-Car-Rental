@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vehicle Form</title>
+    <link href="asserts/css/bootstrap.min.css" rel="stylesheet">
+    <link href="asserts/css/VehicleForm.css" rel="stylesheet">
+</head>
+<body style="background-color: #636e72">
+
+<section class="container-fluid p-3" style="background-color: black">
+<h1 class="text-white">Vehicle Details</h1>
+</section>
+
+<div class="container-fluid" id="Vehicle">
+    <section id="hero">
+        <div class="hero-container">
+            <div class="container-fluid mt-6" >
+                <div class="container-fluid mt-3" id="vehicleform">
+                    <div class="col-xl-12">
+                        <div class="bg-white card">
+                            <div class="card-header text-white" style="font-size: 20px; background: #2d3436">
+                                Vehicles Form
+                            </div>
+                            <div class="card-body bg-white text-dark">
+                                <div class="row p-2">
+                                    <div class="form-group col-4">
+                                        <lable>Car Code :</lable>
+                                        <input type="text" id="txtcarcode" class="form-control">
+                                        <span class="control-error" id="lblcarcode"></span>
+                                    </div>
+                                    <div class="form-group col-4">
+                                        <lable>Brand :</lable>
+                                        <input type="text" id="txtbrand" class="form-control" >
+                                        <span class="control-error" id="lblbrand"></span>
+                                    </div>
+                                    <div class="form-group col-4">
+                                        <lable>Category :</lable>
+                                        <input type="text" id="txtcategory" class="form-control" >
+                                        <span class="control-error" id="lblcategory"></span>
+                                    </div>
+                                </div>
+                                <div class="row p-2 mt-0">
+                                    <div class="form-group col-6">
+                                        <lable>Transmission :</lable>
+                                        <input type="text" id="txttransmission" class="form-control" >
+                                        <span class="control-error" id="lbltransmission"></span>
+                                    </div>
+                                    <div class="form-group col-6">
+                                        <lable>Fuel Type :</lable>
+                                        <input type="text" id="txtfueltype" class="form-control" >
+                                        <span class="control-error" id="lblfueltype"></span>
+                                    </div>
+                                </div>
+                                <div class="row p-2 mt-0">
+                                    <div class="form-group col-6">
+                                        <lable>Daily Rate :</lable>
+                                        <input type="text" id="txtdailyrate" class="form-control" >
+                                        <span class="control-error" id="lbldailyrate"></span>
+                                    </div>
+                                    <div class="form-group col-6">
+                                        <lable>Free Km for a Day :</lable>
+                                        <input type="text" id="txtfreeday" class="form-control">
+                                        <span class="control-error" id="lblfreeday"></span>
+                                    </div>
+                                </div>
+                                <div class="row p-2">
+                                    <div class="form-group col-6">
+                                        <lable>Monthly Rate :</lable>
+                                        <input type="text" id="txtmonthlyrate" class="form-control">
+                                        <span class="control-error" id="lblmonthlyrate"></span>
+                                    </div>
+                                    <div class="form-group col-6">
+                                        <lable>Free Km for a Month :</lable>
+                                        <input type="text" id="txtfreemoth" class="form-control">
+                                        <span class="control-error" id="lblfreemoth"></span>
+                                    </div>
+                                </div>
+                            </div>
+                                <div class="row p-2">
+                                    <div class="form-group col-4">
+                                        <lable>Price for Extra Km :</lable>
+                                        <input type="text" id="txtextrafee" class="form-control">
+                                        <span class="control-error" id="lblextrafee"></span>
+                                    </div>
+                                    <div class="form-group col-4">
+                                        <lable>Registration number :</lable>
+                                        <input type="text" id="txtregnumber" class="form-control">
+                                        <span class="control-error" id="lblregnumber"></span>
+                                    </div>
+                                    <div class="form-group col-4">
+                                        <lable>Color :</lable>
+                                        <input type="text" id="txtcolor" class="form-control">
+                                        <span class="control-error" id="lblcolor"></span>
+                                    </div>
+                                </div>
+                                <div class="row p-1 mt-3" align="left">
+                                    <div class="form-group col-12">
+                                        <button type="button" class="btn text-white fw-bold" style="background-color: #0652DD" id="btnVehicleAdd">Save</button>
+                                        <button type="button" class="btn text-white fw-bold" style="background-color: #009432" id="btnVehicleUpdate">Update</button>
+                                        <button type="button" class="btn text-white fw-bold" style="background-color: #eb2f06" id="btnVehicleDelete">Delete</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+    </section>
+        </div>
+
+<!--<section class="col-12 p-5" style="">-->
+<!--    <table class="table table-hover table-bordered" id="tblVehicle">-->
+<!--        <thead class="text-white" style="background-color: #1e272e">-->
+<!--        <tr>-->
+<!--            <th>Car Code</th>-->
+<!--            <th>Brand</th>-->
+<!--            <th></th>-->
+<!--            <th></th>-->
+<!--            <th></th>-->
+<!--            <th></th>-->
+<!--        </tr>-->
+<!--        </thead>-->
+<!--        <tbody id="tBody">-->
+
+<!--        </tbody>-->
+<!--    </table>-->
+<!--</section>-->
+
+<script src="../src/asserts/js/jquery-3.5.1.min.js"></script>
+<script src="../src/asserts/js/bootstrap.min.js"></script>
+<script src="../src/controller/VehicleController.js"></script>
+
+</body>
+</html>
